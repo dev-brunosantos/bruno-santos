@@ -1,0 +1,28 @@
+<section class="inicio telas centralizar">
+            <h1 class="inicio-titulo">Bruno Santos</h1>
+            <p class="inicio-funcao">Desenvolvedor Júnior</p>
+
+            <div class="inicio-redes">
+                <!-- GITHUB -->
+                <div class="inicio-icones">
+                    <a href="#" class="centralizar" >
+                        <i class="fab fa-github-square"></i>
+                        <label for="">GitHub</label>
+                    </a>
+                </div>
+                <!-- LINKEDIN -->
+                <div class="inicio-icones">
+                    <a href="#" class="centralizar">
+                        <i class="fab fa-linkedin"></i>
+                        <label for="">LinkedIn</label>
+                    </a>
+                </div>
+                <!-- EMAIL -->
+                <div class="inicio-icones">
+                    <a href="#" class="centralizar">
+                        <i class="fas fa-envelope"></i>
+                        <label for="">Email</label>
+                    </a>
+                </div>
+            </div>
+        </section>

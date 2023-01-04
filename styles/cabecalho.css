@@ -1,0 +1,115 @@
+.cabecalho-logo {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.cabecalho-logo h1 {
+    font-size: 3rem;
+}
+
+.cabecalho-logo h1 a {
+    font-weight: bold;
+}
+
+.menu-principal {
+    transition: .3s;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    overflow: hidden;
+    width: 0%;
+    height: 100vh;
+    background-color: #222;
+    z-index: 999;
+}
+
+.abrir-menu {
+    transition: .3s;
+    opacity: 1;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+}
+
+.menu-item {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mobile {
+    font-size: 3rem;
+}
+
+.menu {
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 1300px) {
+    .cabecalho-logo {
+        max-width: 30%;
+        height: 100%;
+        margin-left: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cabecalho-logo h1 {
+        background: var(--degrade);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 3rem;
+    }
+
+    .cabecalho-logo h1 a {
+        font-weight: bold;
+    }
+
+    .menu-principal {
+        width: 40%;
+        height: 100%;
+        opacity: 1;
+        position: relative;
+        left: 0;
+    }
+
+    .menu-item {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .menu a {
+        transition: .3s;
+        width: 150px;
+        border: solid transparent;
+        padding: 5px;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .menu a:hover {
+        transition: .3s;
+        border: solid;
+        border-radius: 10px;
+        padding: 6px;
+        color: var(--azul-claro);
+        font-size: 1.45rem;
+    }
+
+}
