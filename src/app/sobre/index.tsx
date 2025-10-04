@@ -1,6 +1,6 @@
 import { CardSkill } from "../../components/Cards/CardSkill";
 import { Tela } from "../../components/Tela";
-import { Container } from "./components";
+import { Container, ContainerSkills, ContainerBiografia } from "./components";
 import { SobreTitulo } from "./SobreTitulo";
 
 export default function Sobre() {
@@ -9,8 +9,8 @@ export default function Sobre() {
             <Container>
                 <SobreTitulo titulo="Sobre mim" />
 
-                <div style={{ width: '80%',  padding: '1rem', }}>
-                    <h3 style={{ textDecoration: 'underline' }}>Bruno Santos</h3>
+                <ContainerBiografia>
+                    {/* <h3 style={{ textDecoration: 'underline' }}>Bruno Santos</h3> */}
 
                     <p>
                         Sou desenvolvedor com experiência em JavaScript, TypeScript, Node.js e C#, atuando no desenvolvimento de soluções escaláveis e integrações de sistemas.
@@ -22,24 +22,11 @@ export default function Sobre() {
                     <p>
                         Experiência em metodologias ágeis (Scrum), análise de problemas e automação de processos.
                     </p>
-                </div>
+                </ContainerBiografia>
 
                 <SobreTitulo titulo="Minhas Skills" />
 
-                <div
-                    style={{
-                        width: '100%',
-                        height: 'auto',
-                        // marginLeft: '5%',
-                        padding: '1rem',
-                        border: '1px solid #dadada20',
-                        borderRadius: '8px', 
-                        display: 'flex',
-                        flexWrap: 'wrap',
-                        // gap: '1rem',
-                        justifyContent: 'space-around',
-                    }}
-                >
+                <ContainerSkills>
                     <CardSkill titulo="Front-end">
                         <li>HTML 5</li>
                         <li>CSS 3</li>
@@ -52,7 +39,8 @@ export default function Sobre() {
                         <li>Electron</li>
                     </CardSkill>
 
-                    <CardSkill titulo="Mobile" posicao="3rem">
+                    {/* <CardSkill titulo="Mobile" posicao="3rem"> */}
+                    <CardSkill titulo="Mobile">
                         <li>React Native</li>
                     </CardSkill>
 
@@ -62,7 +50,8 @@ export default function Sobre() {
                         <li>Python</li>
                     </CardSkill>
 
-                    <CardSkill titulo="ORM" posicao="3rem">
+                    {/* <CardSkill titulo="ORM" posicao="3rem"> */}
+                    <CardSkill titulo="ORM">
                         <li>Prisma</li>
                         <li>TypeORM</li>
                         <li>Sequelize</li>
@@ -77,7 +66,7 @@ export default function Sobre() {
                         <li>Firebase</li>
                         <li>Supabase</li>
                     </CardSkill>
-                </div>
+                </ContainerSkills>
             </Container>
         </Tela>
     )

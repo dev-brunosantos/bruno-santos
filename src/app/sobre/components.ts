@@ -29,3 +29,36 @@ export const Linha = styled.div`
     border-bottom: 1px dashed #ccc;
     margin-top: 16px;
 `;
+
+export const ContainerBiografia = styled.div`
+    width: 80%;  
+    padding: 1rem;
+
+    @media (max-width: 780px) {
+        width: 100%;
+        /* border: 1px solid red; */
+        p {
+            font-size: 14px;
+        }
+    }
+`;
+
+export const ContainerSkills = styled.div`
+    width: 100%;
+    height: auto;
+    // marginLeft: 5%;
+    padding: 1rem;
+    border: 1px solid #dadada20;
+    border-radius: 8px; 
+    display: flex;
+    flex-wrap: wrap;
+    // gap: 1rem;
+    justify-content: space-around;
+
+    @media (max-width: 780px) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+`;

@@ -4,7 +4,7 @@ import { Container } from "./components";
 
 export default function Projetos() {
 
-    const teste = [1, 2, 3, 4, 5, 6];
+    const teste = [1, 2, 3];
 
     return (
         <Tela centralizar id="projetos">

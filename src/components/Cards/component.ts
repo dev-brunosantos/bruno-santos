@@ -8,6 +8,10 @@ export const Card = styled.div`
     border-radius: 10px;
     overflow: hidden;
     background-color: #000;
+
+    @media (max-width: 780px) {
+        min-width: 80vw;
+    }
 `;
 
 export const CardImagem = styled.div`
@@ -53,5 +57,14 @@ export const CardSkillContainer = styled.div`
         transform: scale(1.1);
         transition: 0.3s;
     }
+    }
+
+    @media (max-width: 780px) {
+        min-width: 60vw;
+        margin: 0 10px;
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
     }
 `;

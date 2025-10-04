@@ -9,7 +9,11 @@ export const Container = styled.div`
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-around
+    justify-content: space-around;
+
+    @media (max-width: 780px) {
+     border: 1px solid var(--azul2);
+    }
 `;
 
 export const TituloSecao = styled.div`
