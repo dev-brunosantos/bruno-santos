@@ -39,3 +39,16 @@ export const TxtConteudo = styled.h2`
         text-align: center;
     }
 `;
+
+export const HomeRedes = styled.div`
+    position: absolute; 
+    left: auto; 
+    bottom: 2rem; 
+    display: flex; 
+    align-items: center; 
+    gap: 22px;
+
+    @media (min-width: 1020px) {
+        display: none;
+    }
+`;

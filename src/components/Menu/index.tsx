@@ -15,7 +15,11 @@ export const Menu = () => {
         <Cabecalho className="cabecalho">
             <Logo>
                 {/* <h1>Bruno <span>Santos</span></h1> */}
-                <h1>B<span>S</span></h1>
+                <h1>
+                    <a href="">
+                        B<span>S</span>
+                    </a>
+                </h1>
             </Logo>
 
             {/* <Nav style={{ display: abrirMenu ? 'flex' : 'none'}}> */}

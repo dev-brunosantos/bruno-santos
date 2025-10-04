@@ -60,8 +60,9 @@ export const CardSkillContainer = styled.div`
     }
 
     @media (max-width: 780px) {
-        min-width: 60vw;
-        margin: 0 10px;
+        min-width: 55vw;
+        /* max-width: 30vw; */
+        margin: 10px 10px;
 
         ::-webkit-scrollbar {
             display: none;

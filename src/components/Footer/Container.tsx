@@ -1,20 +1,21 @@
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa"
 import { BtnRedesIcone } from "../Redes"
+import { ContainerRedesInfor, ContainerTxt, RedesContent } from "./container.styles"
 
 export const FooterContainer = () => {
     return (
         <div className="footer-container">
             <div className="footer-content">
-                <div>
+                <ContainerTxt>
                     <h2>Bruno <span>Santos</span></h2>
                     <h3>Desenvolvedor <span>  Full Stack</span></h3>
-                </div>
+                </ContainerTxt>
 
-                <div style={{ padding: '10px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                <ContainerRedesInfor>
 
                     <h2>Redes Sociais</h2>
 
-                    <div style={{ display: 'flex', gap: '10px', marginTop: '10px' }}>
+                    <RedesContent>
                         <BtnRedesIcone>
                             <FaGithub size={20} color="white" />
                         </BtnRedesIcone>
@@ -26,8 +27,8 @@ export const FooterContainer = () => {
                         <BtnRedesIcone>
                             <FaWhatsapp size={20} color="white" />
                         </BtnRedesIcone>
-                    </div>
-                </div>
+                    </RedesContent>
+                </ContainerRedesInfor>
             </div>
 
             <h5>

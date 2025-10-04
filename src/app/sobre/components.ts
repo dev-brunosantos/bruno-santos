@@ -9,6 +9,10 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @media (min-width: 1020px) {
+        padding: 20px 6rem;
+    }
 `;
 
 export const TituloSecao = styled.div`
@@ -52,13 +56,13 @@ export const ContainerSkills = styled.div`
     border-radius: 8px; 
     display: flex;
     flex-wrap: wrap;
-    // gap: 1rem;
+    gap: 1rem;
     justify-content: space-around;
 
     @media (max-width: 780px) {
         flex-direction: row;
         flex-wrap: nowrap;
         overflow-x: auto;
-        justify-content: flex-start;
+        justify-content: start;
     }
 `;
