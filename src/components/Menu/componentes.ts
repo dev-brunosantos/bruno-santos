@@ -53,7 +53,6 @@ export const Links = styled.li`
         color: var(--texto);
         &:hover {
             color: var(--azul);
-            
             transform: scale(1.1);
         }
     }

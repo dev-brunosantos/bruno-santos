@@ -1,6 +1,14 @@
+import { useState } from "react"
 import { Cabecalho, Logo, Nav, Ul, Links } from "./componentes"
 
 export const Menu = () => {
+
+    const [telaAtiva, setTelaAtiva] = useState('home')
+
+    function mudarTela(tela: string) {
+        setTelaAtiva(tela)
+    }
+
     return (
         <Cabecalho className="cabecalho">
             <Logo>
@@ -11,16 +19,24 @@ export const Menu = () => {
             <Nav>
                 <Ul>
                     <Links>
-                        <a href="#home">Home</a>
+                        <a href="#home" style={{ color: telaAtiva == 'home' ? 'var(--azul)' : '', }} onClick={() => mudarTela('home')}>
+                            Home
+                        </a>
                     </Links>
                     <Links>
-                        <a href="#sobre">Sobre</a>
+                        <a href="#sobre" style={{ color: telaAtiva == 'sobre' ? 'var(--azul)' : '' }} onClick={() => mudarTela('sobre')}>
+                            Sobre
+                        </a>
                     </Links>
                     <Links>
-                        <a href="#projetos">Projetos</a>
+                        <a href="#projetos" style={{ color: telaAtiva == 'projetos' ? 'var(--azul)' : '' }} onClick={() => mudarTela('projetos')}>
+                            Projetos
+                        </a>
                     </Links>
                     <Links>
-                        <a href="#contatos">Contato</a>
+                        <a href="#contatos" style={{ color: telaAtiva == 'contatos' ? 'var(--azul)' : '' }} onClick={() => mudarTela('contatos')}>
+                            Contato
+                        </a>
                     </Links>
                 </Ul>
             </Nav>
