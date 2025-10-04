@@ -7,7 +7,7 @@ export const FooterContainer = () => {
             <div className="footer-content">
                 <div>
                     <h2>Bruno <span>Santos</span></h2>
-                    <h3>Desenvolvedor Full Stack</h3>
+                    <h3>Desenvolvedor <span>  Full Stack</span></h3>
                 </div>
 
                 <div style={{ padding: '10px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -16,23 +16,23 @@ export const FooterContainer = () => {
 
                     <div style={{ display: 'flex', gap: '10px', marginTop: '10px' }}>
                         <BtnRedesIcone>
-                            <FaGithub size={20} />
+                            <FaGithub size={20} color="white" />
                         </BtnRedesIcone>
 
                         <BtnRedesIcone>
-                            <FaLinkedin size={20} />
+                            <FaLinkedin size={20} color="white" />
                         </BtnRedesIcone>
 
                         <BtnRedesIcone>
-                            <FaWhatsapp size={20} />
+                            <FaWhatsapp size={20} color="white" />
                         </BtnRedesIcone>
                     </div>
                 </div>
             </div>
 
-            <p>
+            <h5>
                 © Copyright 2025. Made by Bruno Santos
-            </p>
+            </h5>
         </div>
     )
 }
