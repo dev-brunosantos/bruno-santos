@@ -2,18 +2,19 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
+    height: auto;
+    padding: 1rem;
+    border: 1px solid #dadada20;
+    border-radius: 8px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: space-around
 `;
 
 export const TituloSecao = styled.div`
     width: 100%;
-    /* padding: 0 34px; */
+    padding: 0 34px;
 `;
 
 export const TituloContainer = styled.div`

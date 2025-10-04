@@ -1,18 +1,17 @@
 import { Tela } from "../../components/Tela";
-import { CardRedes } from "../../components/Redes/CardRedes";
+// import { CardRedes } from "../../components/Redes/CardRedes";
 import { ContainerInfor, TxtConteudo, TxtTitulo } from "./components";
 import { TypeAnimation } from 'react-type-animation';
 
 export default function Home() {
     return (
         <Tela centralizar id="home">
+            {/* <CardRedes /> */}
+
             <ContainerInfor>
                 <TxtTitulo>
-                    {/* Olá, eu sou o Bruno <span>Santos</span> */}
                     Olá, eu sou o 
-
                     <TypeAnimation sequence={[' Bruno Santos', 1500]} cursor={false} />
-                
                 </TxtTitulo>
 
                 <TxtConteudo>
@@ -33,8 +32,6 @@ export default function Home() {
                     </span>
                 </TxtConteudo>
             </ContainerInfor>
-
-            <CardRedes />
         </Tela>
     )
 }

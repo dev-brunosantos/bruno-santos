@@ -9,7 +9,7 @@ export default function Sobre() {
             <Container>
                 <SobreTitulo titulo="Sobre mim" />
 
-                <div style={{ width: '80%', marginLeft: '5%', padding: '1rem', }}>
+                <div style={{ width: '80%',  padding: '1rem', }}>
                     <h3 style={{ textDecoration: 'underline' }}>Bruno Santos</h3>
 
                     <p>
@@ -30,7 +30,7 @@ export default function Sobre() {
                     style={{
                         width: '100%',
                         height: 'auto',
-                        marginLeft: '5%',
+                        // marginLeft: '5%',
                         padding: '1rem',
                         border: '1px solid #dadada20',
                         borderRadius: '8px', 
