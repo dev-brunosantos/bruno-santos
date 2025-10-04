@@ -16,6 +16,20 @@ export const Cabecalho = styled.header`
     left: auto;
     color: var(--texto);
     background-color: #000;
+    z-index: 999;
+
+    button {
+        display: none;
+    }
+
+    @media (max-width: 780px) {
+        button {
+            display: block;
+            border: none;
+            cursor: pointer;
+            background-color: transparent;
+        }
+    }
 `;
 
 export const Logo = styled.div`
@@ -33,7 +47,17 @@ export const Nav = styled.nav`
     display: flex;
     justify-content: center;
     align-items: center;
-`;
+    transition: all 0.3s ease-in-out;
+    
+    @media (max-width: 780px) {
+        height: auto;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        /* border: 1px solid var(--cinza); */
+        background-color: var(--fundo);
+    }
+    `;
 
 export const Ul = styled.ul`
     width: 100%;
@@ -44,6 +68,14 @@ export const Ul = styled.ul`
     list-style: none;
     font-size: 1.2rem;
     font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    
+    @media (max-width: 780px) {
+        height: 0vh;
+        overflow: hidden;
+        flex-direction: column;
+    }
 `;
 
 export const Links = styled.li`
@@ -56,5 +88,7 @@ export const Links = styled.li`
             transform: scale(1.1);
         }
     }
-    
+    @media (max-width: 780px) {
+        font-size: 30px;
+    }
 `;
