@@ -10,10 +10,14 @@ function App() {
   return (
     <>
       <Menu />
-      <Home />
-      <Sobre />
-      <Projetos />
-      <Contatos />
+
+      <main>
+        <Home />
+        <Sobre />
+        <Projetos />
+        <Contatos />
+      </main>
+      
       <footer>
         <FooterContainer />
       </footer>

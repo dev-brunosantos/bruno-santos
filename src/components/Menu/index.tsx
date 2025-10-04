@@ -10,17 +10,17 @@ export const Menu = () => {
 
             <Nav>
                 <Ul>
-                    <Links id="home">
+                    <Links>
                         <a href="#home">Home</a>
                     </Links>
-                    <Links id="sobre">
+                    <Links>
                         <a href="#sobre">Sobre</a>
                     </Links>
-                    <Links id="projetos">
+                    <Links>
                         <a href="#projetos">Projetos</a>
                     </Links>
-                    <Links id="contato">
-                        <a href="#contato">Contato</a>
+                    <Links>
+                        <a href="#contatos">Contato</a>
                     </Links>
                 </Ul>
             </Nav>
