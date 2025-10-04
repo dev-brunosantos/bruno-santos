@@ -12,6 +12,7 @@ html {
   height: 100%;
   margin: 0 auto;
   max-height: auto;
+  scroll-behavior: smooth;
   background-color: #121212;
 
   font-family: 'Quantico', sans-serif;

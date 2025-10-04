@@ -1,12 +1,12 @@
 interface TelaProps {
     children: React.ReactNode;
     centralizar?: boolean;
-    id?: string;
+    id: string;
 }
 
 export const Tela = ({ children, centralizar, id }: TelaProps) => {
     return(
-        <div className="tela" style={{ display: centralizar ? 'flex' : 'block', justifyContent: centralizar ? 'center' : 'flex-start', alignItems: centralizar ? 'center' : 'flex-start' }}>
+        <div id={id} className="tela" style={{ display: centralizar ? 'flex' : 'block', justifyContent: centralizar ? 'center' : 'flex-start', alignItems: centralizar ? 'center' : 'flex-start' }}>
             {children}
         </div>
     )
