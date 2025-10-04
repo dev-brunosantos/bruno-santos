@@ -5,15 +5,21 @@ export const CardRedes = () => {
     return (
         <div className="redes-sociais">
             <BtnRedesIcone>
-                <FaGithub size={20} />
+                <span>
+                    <FaGithub size={30} />
+                </span>
             </BtnRedesIcone>
 
             <BtnRedesIcone>
-                <FaLinkedin size={20} />
+                <span>
+                    <FaLinkedin size={30} />
+                </span>
             </BtnRedesIcone>
 
             <BtnRedesIcone>
-                <FaWhatsapp size={20} />
+                <span>
+                    <FaWhatsapp size={30} />
+                </span>
             </BtnRedesIcone>
         </div>
     )
